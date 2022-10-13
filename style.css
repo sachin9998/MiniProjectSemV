@@ -1,0 +1,288 @@
+/* CSS Starts here */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'poppins', 'sans-serif';
+  /* line-height: 1.4; */
+  scroll-behavior: smooth;
+  /* background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%); */
+  /* background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%); */
+}
+
+/* .menus {
+} */
+
+
+
+/* Navigation Menu */
+
+/* First Section - Nav Bar & Logo */
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.headerClass {
+  max-width: 1200px;
+  margin: 0 auto;
+
+}
+
+header {
+  /* background-color: black; */
+  background-color: #F43C3C;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding: 15px;
+}
+
+nav ul {
+  display: flex;
+  gap: 50px;
+
+  align-items: center;
+}
+
+nav ul li {
+  border-bottom: 2px solid transparent;
+  transition: 0.2s ease-in;
+}
+
+nav ul li:hover {
+  border-bottom: 2px solid white;
+  transition: 0.2s ease-in;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+
+
+/* HOMEPage */
+
+.container {
+  /* border: 1px solid black; */
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  /* padding: 0 8%; */
+  padding: 0 8% 2.5% 8%;
+}
+
+.container h1 {
+  text-align: center;
+  /* padding-top: 10%;  */
+  padding-top: 40px;
+  margin-bottom: 45px;
+  font-weight: 600;
+  position: relative;
+}
+
+.container h1::after {
+  content: ' ';
+  /* background: #303ef7; */
+  background: red;
+  width: 100px;
+  height: 5px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.service {
+  text-align: center;
+  padding: 25px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  background: transparent;
+  transition: transform 0.5s, background 0.5s;
+
+  border: 1px solid transparent;
+  border: 1px solid black;
+}
+
+.service a {
+  color: black;
+}
+
+.service i {
+  font-size: 40px;
+  margin-bottom: 10px;
+  /* color: #303ef7; */
+  color: red;
+}
+
+.service h2 {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* Cards hover css */
+
+.service:hover {
+  /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+  transition: 0.2s ease-in-out;
+  transform: scale(1.08);
+}
+
+.service:hover i {
+  color: black;
+}
+
+/* .service:hover {
+  background: black;
+  color: #fff;
+  transform: scale(1.05);
+} */
+
+/* .service:hover i {
+  color: #fff;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Divider CSS */
+
+.divider {
+  border: 1px solid grey;
+  margin: 10px 5% 10px 5%;
+}
+
+
+/* Footer CSS */
+
+
+footer {
+  /* border-top: 1px solid grey; */
+  /* background-color: #fff0db; */
+}
+
+.footerLogo {
+  padding: 15px;
+}
+
+.footerContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  padding: 40px;
+  gap: 20px;
+}
+
+.footerLink h3 {
+  margin-bottom: 10px;
+  color: grey;
+}
+
+.footerLink ul {
+  list-style-type: none;
+}
+
+.footerLink ul li {
+  font-size: 16px;
+  margin-bottom: 5px;
+  /* font-weight: 400; */
+}
+
+.newsletter {
+  margin-right: 50px;
+}
+
+.newsletter p {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.9;
+  text-align: justify;
+}
+
+.newsletter h3 {
+  margin-bottom: 10px;
+  color: grey;
+}
+
+/* .newsletter input {
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  color: grey;
+} */
+
+/* .icon {
+  display: flex;
+  gap: 15px;
+  font-size: 25px;
+} */
+
+
+
+.new {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.links a {
+  color: black;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+
+/* Media Quries started here */
+@media screen and (max-width: 638px) {
+  .footerContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 587px) {
+  nav {
+    display: flex;
+  }
+
+  .logo {
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
